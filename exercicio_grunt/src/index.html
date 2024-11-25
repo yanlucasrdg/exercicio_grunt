@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-generator</title>
+    <link rel="stylesheet" href="@@endereco_do_css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas Aleatórias</h1>
+        <label for="password-length">Comprimento da Senha:</label>
+        <input type="number" id="password-length" min="4" max="20" value="8">
+        
+        <label for="include-numbers">Incluir Números:</label>
+        <input type="checkbox" id="include-numbers" checked>
+
+        <label for="include-uppercase">Incluir Letras Maiúsculas:</label>
+        <input type="checkbox" id="include-uppercase" checked>
+
+        <label for="include-special">Incluir Caracteres Especiais:</label>
+        <input type="checkbox" id="include-special">
+
+        <button id="generate-btn">Gerar Senha</button>
+
+        <p id="generated-password"></p>
+    </div>
+    <script src="@@endereco_do_js"></script>
+</body>
+</html>
